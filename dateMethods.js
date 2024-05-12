@@ -3,13 +3,12 @@ let date= new Date();
 console.log(date);
 
 // 2. Date.parse()
-let b= Date.parse('December 5, 2001');
-console.log(b);
+let dparse = Date.parse('December 5,2001');
+console.log('parse',dparse);
 
 // 3. Date.UTC()  
-let y= Date.UTC(2001, 11, 12);
-console.log(y);
-
+let utcdate = Date.UTC(2001, 11, 12);
+console.log('utc',utcdate);
 
 // 4. getDate()
 console.log(new Date().getDate());
@@ -29,97 +28,122 @@ console.log(new Date().getHours());
 // 9. getMinutes()
 console.log(new Date().getMinutes());
 
-// 10. getSeconds()
-console.log(new Date().getSeconds());
+ // 10. getSeconds()
+ console.log(new Date().getSeconds());
 
-// 11. getMilliseconds()
+ // 11. getMilliseconds()
 console.log(new Date().getMilliseconds());
 
 // 12. setDate()
-let h= new Date().setDate(15)
-console.log(new Date(h));
+const sDate = new Date()
+sDate.setDate(25);
+console.log('setDate',sDate);
 
-// 13. setMonth()
-let e= new Date().setMonth(5)
-console.log(new Date(e));
+// 13.setMonth()
+const smDate = new Date()
+smDate.setMonth(10);
+console.log('setMonth',smDate);
 
 // 14. setFullYear()
-let c= new Date().setFullYear(2023)
-console.log(new Date(c));
+const syDate = new Date()
+syDate.setFullYear(2018);
+console.log('setMonth',syDate);
 
 // 15. setHours()
-let v= new Date().setHours(8)
-console.log(new Date(v));
+const shDate = new Date()
+shDate.setHours(8);
+console.log('setHours',shDate);
 
 // 16. setMinutes()
-let d= new Date().setMinutes(45)
-console.log(new Date(d));
+const sMTime = new Date()
+sMTime.setMinutes(30);
+console.log('setHours',sMTime);
 
-// 17. setSeconds()
-let t= new Date().setSeconds(10)
-console.log(new Date(t));
+// 17.setSeconds()
+const sSTime = new Date()
+sSTime.setSeconds(30);
+console.log('setSeconds',sSTime);
 
 // 18. setMilliseconds()
-let n= new Date().setMilliseconds(50)
-console.log(new Date(n));
+const sMSTime = new Date()
+sMSTime.setMilliseconds(45);
+console.log('setSeconds',sMSTime);
 
 // 19. toDateString()
-let s= new Date().toDateString()
-console.log(s);
+const dateToStrig = new Date()
+let dText = dateToStrig.toDateString();
+console.log('toDateString',dText);
 
 // 20. toLocaleDateString()
-let z= new Date().toLocaleDateString()
-console.log(z);
+const dateToLocal = new Date()
+let dLocalText = dateToLocal.toLocaleDateString();
+console.log('toLocaleDateString',dLocalText);
 
-// 21. toTimeString()
-let f= new Date().toTimeString()
-console.log(f);
+//21. toTimeString()
+const timeToTimeString = new Date()
+let TimeString = timeToTimeString.toLocaleDateString();
+console.log('TimeString',TimeString);
 
 // 22. toLocaleTimeString()
-let o= new Date().toLocaleTimeString()
-console.log(o);
+const timeToTimeStringLocal = new Date()
+let TimeStringLocal = timeToTimeStringLocal.toLocaleTimeString();
+console.log('toLocaleTimeString',TimeStringLocal);
 
 // 23. getUTCDate()
-console.log(new Date().getUTCDate());
+const dateForUtc = new Date()
+let getUTCDate = dateForUtc.getUTCDate()
+console.log('getUTCDate',getUTCDate);
 
 // 24. getUTCDay()
-console.log(new Date().getUTCDay());
+let getUTCDay = dateForUtc.getUTCDay()
+console.log('getUTCDay',getUTCDay);
 
 // 25. getUTCFullYear()
-console.log(new Date().getUTCFullYear());
+let getUTCFullYear = dateForUtc.getUTCFullYear()
+console.log('getUTCFullYear',getUTCFullYear);
 
 // 26. getUTCHours()
-console.log(new Date().getUTCHours());
+let getUTCHours = dateForUtc.getUTCHours()
+console.log('getUTCHours',getUTCHours);
 
-// 27. getUTCMinutes()
-console.log(new Date().getUTCMinutes());
+//27. getUTCMinutes()
+let getUTCMinutes = dateForUtc.getUTCMinutes()
+console.log('getUTCMinutes',getUTCMinutes);
 
 // 28. getUTCSeconds()
-console.log(new Date().getUTCSeconds());
+let getUTCSeconds = dateForUtc.getUTCSeconds()
+console.log('getUTCSeconds',getUTCSeconds);
 
 // 29. getUTCMilliseconds()
-console.log(new Date().getUTCMilliseconds());
+let getUTCMilliseconds = dateForUtc.getUTCMilliseconds()
+console.log('getUTCMilliseconds',getUTCMilliseconds);
 
 // 30. setUTCDate()
-let k= new Date().setUTCDate(10)
-console.log(new Date(k));
+const utcDateSetDate = new Date()
+utcDateSetDate.setUTCDate(10)
+console.log('setUTCDate',utcDateSetDate);
 
 // 31. setUTCFullYear()
-let i= new Date().setUTCFullYear(1971)
-console.log(new Date(i));
+const utcDateSetsetYear = new Date()
+utcDateSetsetYear.setUTCFullYear(2018)
+console.log('setUTCDate',utcDateSetsetYear);
 
 // 32. setUTCHours()
-let u= new Date().setUTCHours(9)
-console.log(new Date(u));
+const utcDateSetsetHours = new Date()
+utcDateSetsetHours.setUTCHours(15)
+console.log('setUTCHours',utcDateSetsetHours);
 
 // 33. setUTCMinutes()
-let g= new Date().setUTCMinutes(35)
-console.log(new Date(g));
+const utcDateSetsetMinutes = new Date()
+utcDateSetsetMinutes.setUTCMinutes(30)
+console.log('setUTCMinutes',utcDateSetsetMinutes);
 
 // 34. setUTCSeconds()
-let r= new Date().setUTCSeconds(60)
-console.log(new Date(r));
+const utcDateSetsetSeconds = new Date()
+utcDateSetsetSeconds.setUTCSeconds(10)
+console.log('setUTCSeconds',utcDateSetsetSeconds);
 
 // 35. setUTCMilliseconds()
-let j= new Date().setUTCMilliseconds(30)
-console.log(new Date(j));
+const utcDateSetsetMilliseconds = new Date()
+utcDateSetsetMilliseconds.setUTCMilliseconds(100)
+console.log('setUTCMilliseconds',utcDateSetsetMilliseconds);
